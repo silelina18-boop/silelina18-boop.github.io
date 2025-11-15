@@ -1,0 +1,142 @@
+body{
+  margin: 5px;
+  padding: 0;
+  min-height: 100vh;
+  
+  /* Градиент с несколькими цветами */
+  background: linear-gradient(135deg, 
+    #d6dcfa 0%, 
+    #efe3fa 25%, 
+    #fae9fc 50%, 
+    #fae1e4 75%, 
+    #f5e5f0 100%);
+}
+.quiz {
+  display: flex;
+  gap: 25px;
+  justify-content: left;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.quiz_item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+.quiz_item:hover {
+  background-color: #f5f5f5;
+}
+
+.quiz_item img {
+  width: 100px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+
+.quiz_title {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.quiz_item input {
+  margin-top: 5px;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.modal-content button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button{
+  border-block-color: rgb(207, 94, 1); 
+  writing-mode: horizontal-tb; 
+  width: 150px;
+  font-style: italic;
+  font-weight: bold;
+  background-color: rgb(198, 247, 149);
+}
+
+span{
+  font-style: italic;
+  font-weight: bold;
+}
+
+.attempts-disabled {
+  opacity: 0.6;
+  pointer-events: none;
+}
+.attempts-info {
+  font-size: 14px;
+  color: #666;
+  margin-top: 5px;
+}
+#showResults {
+  display: block;
+  margin: 10px auto;
+  width: 200px;
+  padding: 15px 30px;
+  font-size: 18px;
+  background-color: #4CAF50;
+  color: rgb(49, 83, 235);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+#showResults:disabled {
+  background-color: #ddf7cc;
+  cursor: not-allowed;
+}
+
+
+.qustion_title{
+  font-size: 18px;
+  font-style: italic;
+  font-weight: bold;
+  background-color: rgb(243, 247, 198);
+  color: rgb(1, 30, 161);
+}
+
+.quiz_title_date{
+  font-size: 25px;
+  font-style: italic;
+  font-weight: bold;
+}
+    
+
